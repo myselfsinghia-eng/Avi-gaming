@@ -1,14 +1,117 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AVI GAMING</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#0a0014,#17002e,#000);
+color:white;
+overflow-x:hidden;
+}
+
+header{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+
+h1{
+font-size:60px;
+color:#d946ef;
+text-shadow:0 0 20px #d946ef;
+animation:glow 2s infinite alternate;
+}
+
+@keyframes glow{
+from{ text-shadow:0 0 10px #d946ef; }
+to{ text-shadow:0 0 40px #d946ef; }
+}
+
+.btn{
+margin-top:20px;
+padding:15px 30px;
+background:#d946ef;
+color:white;
+text-decoration:none;
+border-radius:30px;
+font-weight:bold;
+}
+
+section{
+padding:60px 20px;
+}
+
+.card{
+background:rgba(255,255,255,0.08);
+padding:20px;
+border-radius:20px;
+margin-top:20px;
+}
+
+footer{
+text-align:center;
+padding:20px;
+background:#12001f;
+}
+</style>
 </head>
-<body style="background:black;color:white;text-align:center;">
+
+<body>
+
+<header>
 <h1>🎮 AVI GAMING 🎮</h1>
-<h2>Welcome To My Website</h2>
-<p>👤 Avi Singh</p>
-<p>🌍 Italy</p>
-<p>🤝 Best Friend: Raunak</p>
-<p>📧 aviraunak24@gmail.com</p>
+<p>Welcome To The Ultimate Gaming World</p>
+<a class="btn" href="#about">ENTER</a>
+</header>
+
+<section id="about">
+<h2>👤 About Me</h2>
+<div class="card">
+<p>
+Hi, I'm Avi Singh from Italy.
+Gaming is my passion and technology is my future.
+</p>
+</div>
+</section>
+
+<section>
+<h2>🎮 Favorite Games</h2>
+<div class="card">🔥 Free Fire</div>
+<div class="card">⚔️ BGMI</div>
+<div class="card">🚗 GTA V</div>
+<div class="card">⛏️ Minecraft</div>
+</section>
+
+<section>
+<h2>🤝 Best Friend</h2>
+<div class="card">
+Raunak
+</div>
+</section>
+
+<section>
+<h2>📧 Contact</h2>
+<div class="card">
+aviraunak24@gmail.com
+</div>
+</section>
+
+<footer>
+💜 AVI GAMING 💜
+</footer>
+
 </body>
 </html>
