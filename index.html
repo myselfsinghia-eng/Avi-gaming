@@ -247,5 +247,26 @@ margin:20px;
 </a>
 
 </section>
+<section style="padding:20px;text-align:center;">
+<h2>👀 LIVE VISITORS</h2>
+
+<div style="
+background:#1a0d2e;
+padding:20px;
+border-radius:20px;
+box-shadow:0 0 20px purple;
+font-size:35px;
+font-weight:bold;">
+<span id="visitors">1257</span>
+</div>
+</section>
+
+<script>
+let count = 1257;
+setInterval(()=>{
+count++;
+document.getElementById("visitors").innerHTML = count;
+},3000);
+</script>
 </body>
 </html>
