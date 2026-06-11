@@ -268,5 +268,29 @@ count++;
 document.getElementById("visitors").innerHTML = count;
 },3000);
 </script>
+<section style="text-align:center;padding:20px;">
+<h2 id="typing" style="color:#ff4dff;"></h2>
+</section>
+
+<script>
+const text = "🔥 WELCOME TO AVI GAMING 🔥";
+let i = 0;
+
+function typeEffect() {
+  if (i < text.length) {
+    document.getElementById("typing").innerHTML += text.charAt(i);
+    i++;
+    setTimeout(typeEffect, 100);
+  } else {
+    setTimeout(() => {
+      document.getElementById("typing").innerHTML = "";
+      i = 0;
+      typeEffect();
+    }, 2000);
+  }
+}
+
+typeEffect();
+</script>
 </body>
 </html>
